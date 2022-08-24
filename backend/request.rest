@@ -1,0 +1,28 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJNYXVsYW5hIFJpemtpIiwiZW1haWwiOiJtYXVsYW5hMDNteXIxOUBnbWFpbC5jb20iLCJpYXQiOjE2NTk1ODQyNzAsImV4cCI6MTY1OTU4NDI4NX0.Mf5_g8sPJnWUPHHl8GQWo45LSHnOTBeQD3HkFBL-2gI
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Maulana Rizki",
+    "email": "maulana03myr19@gmail.com",
+    "password": "siapkah001",
+    "confPassword": "siapkah001"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "maulana03myr19@gmail.com",
+    "password": "siapkah001"
+}
+
+###
+GET http://localhost:5000/token
+
+###
+DELETE http://localhost:5000/logout
